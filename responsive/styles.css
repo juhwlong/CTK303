@@ -1,0 +1,109 @@
+Certainly! To make the webpage responsive at different screen sizes, you can define specific breakpoints using media queries in the CSS. Here's an example of how you can add three separate breakpoints for the website to ensure responsiveness:
+
+```css
+/* Global styles */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+/* Header and navigation styles */
+header {
+  background-color: #333;
+  color: #fff;
+  padding: 10px;
+}
+
+nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  text-align: center;
+}
+
+nav ul li {
+  display: inline;
+  margin: 0 10px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: #fff;
+}
+/* Styles for normal links */
+a {
+  color: #000;
+  text-decoration: none;
+}
+
+/* Styles for links on hover */
+a:hover {
+  color: #ff0000;
+  text-decoration: underline;
+}
+
+/* Main section styles */
+main {
+  padding: 20px;
+  text-align: center;
+}
+
+/* Footer styles */
+footer {
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+  padding: 10px;
+}
+
+/* Additional styles */
+img {
+  max-width: 100%;
+  height: auto;
+  margin-top: 20px;
+}
+
+/* Media queries for responsiveness */
+@media (max-width: 600px) {
+  /* Styles for small screens */
+  header {
+    padding: 5px;
+  }
+  nav ul li {
+    display: block;
+    margin: 10px 0;
+  }
+}
+
+@media (min-width: 601px) and (max-width: 800px) {
+  /* Styles for medium screens */
+  main {
+    padding: 10px;
+  }
+}
+
+@media (min-width: 801px) {
+  /* Styles for large screens */
+  footer {
+    padding: 20px;
+  }
+}/* Media query for window greater than 800px */
+@media (min-width: 800px) {
+  float{
+    float: left;
+    width: 50%; /* Adjust the width as needed */
+  }
+
+  img {
+    width: 50%; /* Adjust the width as needed */
+  }
+}
+
+
+const navToggle = document.querySelector('.nav-toggle');
+const navMenu = document.querySelector('.nav-menu');
+
+navToggle.addEventListener('click', () => {
+  navMenu.classList.toggle('show');
+});
