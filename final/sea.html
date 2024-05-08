@@ -3,14 +3,15 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Save the Sea - Earth Care</title>
+    <title>Sea Protection</title>
     <link rel="stylesheet" href="final.css">
+    <!-- Add Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
 </head>
 <body>
-
     <header>
         <div class="container">
-            <h1>Earth Care</h1>
+            <h1>Save the Sea</h1>
             <nav>
                 <a href="home.html">Home</a>
                 <a href="forests.html">Save Forests</a>
@@ -19,17 +20,62 @@
         </div>
     </header>
 
-    <div class="container sea-page">
-        <h2>Protect Our Oceans</h2>
-        <p>Our oceans are facing many threats. Discover what you can do to save our seas.</p>
-        <!-- Add sea-related content here -->
+    <div class="sea-intro">
+        <p>Learn about the importance of protecting our oceans and marine life. Discover ways to reduce pollution and preserve the beauty of our seas.</p>
+    </div>
+
+    <div class="sea-content">
+        <div class="sea-info">
+            <h2>Protecting Marine Life</h2>
+            <p>Preserving marine life is crucial for maintaining the delicate balance of our oceans' ecosystems. To protect marine life, we must first raise awareness about the importance of ocean conservation. This involves educating the public about the threats facing marine habitats, such as pollution, overfishing, and climate change. Implementing sustainable fishing practices, establishing marine protected areas, and reducing plastic waste are essential steps in safeguarding marine species and their habitats. Supporting organizations dedicated to marine conservation and participating in beach clean-ups and conservation initiatives can also make a significant impact. By working together to protect marine life, we can ensure the health and biodiversity of our oceans for future generations.</p>
+        </div>
+        
+        <div class="sea-info">
+            <h2>Sustainable Fishing Practices</h2>
+            <p>Adopting sustainable fishing practices is vital for ensuring the long-term health of our oceans and marine life. Sustainable fishing involves methods that allow fish populations to replenish and ecosystems to thrive. By avoiding overfishing, minimizing bycatch, and using selective fishing gear, we can help maintain fish stocks at healthy levels. Supporting fisheries that follow sustainable practices, such as using eco-friendly gear and adhering to catch limits, is key to promoting responsible fishing. Consumers can also play a role by choosing seafood from certified sustainable sources and avoiding species that are overexploited. By embracing sustainable fishing methods, we can protect marine ecosystems, support livelihoods dependent on fishing, and preserve the biodiversity of our oceans for generations to come.</p>
+        </div>
+
+        <div class="sea-info">
+            <h2>Reducing Plastic Pollution</h2>
+            <p>Addressing plastic pollution is essential for safeguarding marine life and protecting our oceans. To reduce plastic pollution, we must focus on minimizing single-use plastics and promoting recycling efforts. Implementing policies to limit plastic production, encouraging the use of biodegradable alternatives, and raising awareness about the impact of plastic waste on marine ecosystems are crucial steps. Individuals can contribute by reducing their plastic consumption, properly disposing of plastic waste, and participating in beach clean-up activities. Supporting initiatives that aim to clean up ocean plastic and advocating for policies that promote plastic waste reduction can also make a significant difference. By collectively working towards reducing plastic pollution, we can help ensure a cleaner and healthier environment for marine life and future generations.</p>
+        </div>
+    </div>
+
+    <div id="seaCarousel" class="carousel slide" data-ride="carousel">
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="turtles.jpg" class="d-block w-100" alt="Sea Image 1">
+            </div>
+            <div class="carousel-item">
+                <img src="underwaterdark.jpeg" class="d-block w-100" alt="Sea Image 2">
+            </div>
+            <div class="carousel-item">
+                <img src="oceanwnet.png" class="d-block w-100" alt="Sea Image 3">
+            </div>
+            <div class="carousel-item">
+                <img src="halfnhalf.jpg" class="d-block w-100" alt="Sea Image 4">
+            </div>
+            <!-- Add more carousel items for additional images -->
+        </div>
+        <a class="carousel-control-prev" href="#seaCarousel" role="button" data-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+        </a>
+        <a class="carousel-control-next" href="#seaCarousel" role="button" data-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+        </a>
     </div>
 
     <footer>
         <div class="container">
-            <p>&copy; 2023 Earth Care | All Rights Reserved</p>
+            <p>&copy; 2023 Save the Sea | All Rights Reserved</p>
         </div>
     </footer>
 
+    <!-- Add Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 </body>
 </html>
